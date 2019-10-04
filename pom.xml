@@ -12,13 +12,13 @@
  <!-- Publish the versioned releases here -->
  <repository>
   <id>nexus</id>
-  <url>dav:http://18.220.194.35:8086/repository/vik/</url>
+  <url>dav:http://18.220.194.35:8086/repository/maven-snapshots/</url>
  </repository>
 
  <!-- Publish the versioned releases here -->
  <snapshotRepository>
   <id>nexus</id>
-  <url>dav:http://18.220.194.35:8086/repository/vik/</url>
+  <url>dav:http://18.220.194.35:8086/repository/maven-snapshots/</url>
  </snapshotRepository>
 </distributionManagement>
 
