@@ -40,7 +40,20 @@ node {
             bat(/"%MVN_HOME%\bin\mvn" -Dmaven.test.failure.ignore clean deploy/)
          }
       }
+      
    }
+   
+   stage('Sonar Analysis') {
+      withEnv(["MVN_HOME=$mvnHome"]) {
+         if (isUnix()) {
+            sh '"$MVN_HOME/bin/mvn" sonar:sonar -Dsonar.host.url=http://18.220.194.35:9000'
+         } else {
+            bat(/"%MVN_HOME%\bin\mvn" sonar:sonar/)
+         }
+      }
+   }
+
+   
 
    
 }
