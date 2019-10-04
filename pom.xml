@@ -9,11 +9,11 @@
 	<description>Simplest possible Java Webapp</description>
 
 <distributionManagement>
- <!-- Publish the versioned releases here -->
+ <!-- Publish the versioned releases here 
  <repository>
   <id>nexus</id>
   <url>http://18.220.194.35:8089/nexus/content/repositories/vik/</url>
- </repository>
+ </repository> -->
 
  <!-- Publish the versioned releases here -->
  <snapshotRepository>
